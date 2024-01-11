@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Oxanium:wght@600&display=swap');
+* {
+  margin: 0;
+
+/*Use 'margin: auto' for non flexbox/grid projects */
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fits images in containers no matter the size */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#canvas, #scoreboard, #score-table, .score-column, .time-column, .time-box, .period, .score-square, .control-section {
+  display: flex;
+  align-items: center;
+}
+
+.score-column, .time-column, .time-box, .period, .score-square, .control-section {
+  justify-content: center;
+}
+
+#scoreboard, #animated-board, #score-table, .score-column, .time-column, .control-section {
+  background-color: #162461;
+}
+
+#canvas {
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Oxanium';
+  font-size: 30px;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/pacers-arena.jpg');
+  background-size: cover;
+}
+
+#scoreboard {
+  justify-content: space-between;
+  width: 800px;
+  height: 500px;
+  opacity: 0.8;
+  border: 2px solid #DCB645;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#score-table {
+  justify-content: space-around;
+  width: 800px;
+  height: 250px;
+  opacity: 0.8;
+  border: 2px solid #DCB645;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.score-column {
+  flex-direction: column;
+  width: 270px;
+  height: 430px;
+  margin: 0 10px 0 10px;
+}
+
+.time-column {
+  flex-direction: column;
+  width: 320px;
+  height: 430px;
+  margin: 0 10px 0 10px;
+}
+
+.time-box {
+  background-color: black;
+  width: 200px;
+  height: 65px;
+  font-size: 35px;
+  border-radius: 10px;
+  color: #dd082f;
+  padding-top: 8px;
+}
+
+.period {
+  color: #c29b28;
+  background-color: black;
+  width: 200px;
+  height: 53px;
+  margin-top: 12px;
+  border-radius: 10px;
+  padding-top: 4px;
+  font-size: 20px;
+}
+
+.score-square {
+  width: 180px;
+  height: 130px;
+  font-size: 60px;
+  color: #DCB645;
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 2px solid #c29b28
+}
+
+.control-section {
+  width: 230px;
+  height: 120px;
+  margin: 15px 0 5px 0;
+}
+
+#animated-board {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+#animated-board img {
+  border-radius: 50%;
+}
+
+.score-column h2 {
+  margin-top: -10px;
+}
+
+.score-square h2 {
+  margin-top: 7px;
+}
+
+/* Getting rid of an annoying button I couldn't align */
+
+#invisible-button {
+  background: #162461;
+  border: none;
+}
+
+.logo-circle-bucks, .logo-circle-pacers {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.logo-circle-pacers {
+  background-image: url('images/pacers-logo.jpg');
+}
+
+.logo-circle-bucks {
+  background-image: url('images/bucks-logo.jpg');
+}
+
+.time-section button,
+.control-section button {
+  font-family: 'Lato';
+  border-radius: 10px;
+  font-weight: 900;
+  background-color: #DCB645;
+  border: 3px solid white;
+  color: #162461;
+}
+
+.time-section button {
+  width: 60px;
+  height: 60px;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.control-section button {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+#reset-button {
+  background-color: #dd082f;
+  color: white;
+}
+
+.control-section button:hover {
+  background-color: #c29b28;
+}
+
+.control-section button:active {
+  border: 2px solid #162461;
+  color: white;
+}
+
+.time-section button:hover {
+  background-color: #c29b28;
+}
+
+.time-section button:active {
+  border: 2px solid #162461;
+  color: white;
+}
+
+/* Getting rid of an annoying button I couldn't align */
+
+#invisible-button:hover,
+#invisible-button:active {
+  background: #162461;
+  border: none;
+}

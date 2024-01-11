@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body id="canvas">
+  <main id="scoreboard">
+    <section class="score-column">
+      <h2>HOME</h2>
+      <div class="score-square"><h2 id="home-score">0</h2></div>
+      <div class="logo-circle-pacers"></div>
+    </section>
+    <section class="time-column">
+      <div class="time-box"><h2 id="time-clock">12:00</h2></div>
+      <div class="period"><h2>PERIOD: <span id="quarter">1</span></h2></div>
+      <div id="animated-board">
+        <img src="images/kroger.jpg" alt="" id="gif-maker">
+      </div>
+    </section>
+    <section class="score-column">
+      <h2>GUEST</h2>
+      <div class="score-square"><h2 id="guest-score">0</h2></div>
+      <div class="logo-circle-bucks"></div>
+    </section>
+  </main>
+  <div id="score-table">
+    <div class="control-section">
+      <button onclick="freeThrow()">+1</button>
+      <button onclick="jumpShot()">+2</button>
+      <button onclick="threePTR()">+3</button>
+      <button onclick="zero()">RST</button>
+    </div>
+    <div class="time-section">
+      <button onclick="crowd1()">HM1</button>
+      <button onclick="crowd2()">HM2</button>
+      <button onclick="clearGif()">CLR</button>
+        <div class="time-section">
+          <button onclick="startTime()">CLK</button>
+          <button onclick="stopTime()">STP</button>
+          <button onclick="quarterChg()">QTR</button>
+        </div>
+          <div class="time-section">
+            <button id="reset-button" onclick="resetTime()">RST</button>
+            <button id="invisible-button"></button>
+            <button id="reset-button" onclick="resetTime()">RST</button>
+          </div>
+    </div>
+    <div class="control-section">
+      <button onclick="gFreeThrow()">+1</button>
+      <button onclick="gJumpShot()">+2</button>
+      <button onclick="gThreePTR()">+3</button>
+      <button onclick="gZero()">RST</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
